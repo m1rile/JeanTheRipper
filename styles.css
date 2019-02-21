@@ -4,10 +4,15 @@
 body
 {
     width: 100%;
-    font-family: cursive;
+    font-family: 'Oswald', sans-serif;
     margin: 0px;
     padding: 0px;
     background-color: rgb(240, 240, 240);
+}
+
+p
+{
+    text-indent: 15px;
 }
 
 /* allow the background color and the broder of a paragraph */
@@ -32,7 +37,7 @@ nav a
     color: rgb(240, 240, 240);
     text-align: center;
     font-size: 18px;
-    font-family: cursive;
+    font-family: 'Lato', sans-serif;
     display: inline-table;
     text-decoration: none;
     padding: 13px 0px;
@@ -44,7 +49,7 @@ nav #a1
     color: rgb(240, 240, 240);
     text-align: center;
     font-size: 18px;
-    font-family: cursive;
+    font-family: 'Lato', sans-serif;
     display: inline-table;
     text-decoration: none;
     padding: 13px 0px;
@@ -95,7 +100,7 @@ nav li1
 .footer-menu
 {
     width: 100%;
-    height: 90px;
+    height: 100px;
     margin: auto;
     margin-top: 20px;
     background-color: rgba(0,0,0,0.8);
@@ -116,7 +121,7 @@ nav li1
 
 .footer-menu ul li a
 {
-    font-family: cursive;
+    font-family: 'Laila', sans-serif;
     font-size: 15ox;
     font-weight: 600;
     color: burlywood;

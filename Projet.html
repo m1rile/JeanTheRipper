@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head lang="fr">
+        <meta charset="utf-8">
+        <title>JeanTheRipper</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Laila|Roboto+Condensed|Lato|Oswald|Anton|Lobster" rel="stylesheet">
+        
+    </head>
+    
+    <body id="debut" style="background-color: #FFF9FF">
+        <!-- 
+        Tag body is the content of the page
+        
+        Tag p allow paragraph
+        
+        Tag h + number make title with different size
+
+        Tag br = line break
+
+        Tag a = a line with a redirection to an url with the code href="..." 
+        If we want to redirect in another tab, just add the attribute target="_blank"
+        If we want to redirect to a section on the same page, just add the attribute target="#section ..."
+
+        Tag section = create a new section with a paragraph and its title
+        
+        Tag img = just add the attribute src ="path". If we want to add a comment on this photo add the attribute alt="comment"
+
+        Tag li = list
+        
+        Tag ol/ul = make an order in a list
+
+        Attribute css style = can modify color/size/font
+
+        Tag strong = make a word in bold
+
+        Tag div = make lots of parts on the page
+
+
+        -->
+        
+        <header>
+            <div style="background-color: rgba(255,100,0,1); height: 130px">
+            <br>
+            <h1 style="color: rgb(240, 240, 240);text-align: center;font-size: 38px;font-family: 'Anton', sans-serif;">JeanTheRipper</h1>
+            </div>
+        </header>
+        
+        <nav id="navbar">
+            <ul>
+                <li class="menu-html"><a id="a1" href="index.html">Accueil</a></li>
+                <li class="menu-JTR"><a href="JonhTheRipper.html">John The Ripper</a></li>
+                <li class="menu-Hash"><a id="a1" href="Hashcat.html">Hashacat</a></li>
+                <li class="menu-Pré"><a href="Projet.html" style="background-color: rgba(0,0,0,0.4)">T&eacute;l&eacute;chargement</a></li>
+                <li1><a id="a1" href="ENG/home.html">ENG</a></li1>
+                <li1 class="menu-co"><a id="a1" href="Connexion.html">Connexion</a></li1>
+            </ul>
+        </nav>
+        
+        <br><br>
+        
+        <p style="margin-left: 300px; width: 60%; font-size: 1.1em">Dans cette partie du site vous pourrez retrouver les liens de téléchargement pour tous les documents nécessaires au projet ainsi que le projet en lui-même.</p>
+        
+        <h1 style="margin-left: 300px">Le cahier des charges :</h1>
+        
+        <br>
+        
+        <div style="margin-left: 300px; width: 60%; font-size: 1.5em">
+            <a href="Rapports/_JTR_Cahier_des_charges.pdf" target="_blank">Cahier des charges !</a>
+        </div>
+        
+        <br>
+        
+        <h1 style="margin-left: 300px">Les rapports de soutenance :</h1>
+        
+        <h1 style="margin-left: 300px">Le projet :</h1>
+        
+        <script>
+                document.addEventListener('DOMContentLoaded', function()
+                {
+                    window.onscroll = function(ev) 
+                    {
+                        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+                    };
+                });
+        </script>
+        
+        <footer>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Liens.html">Liens utiles</a></li>
+                    <li><a href="Pr%C3%A9sentations.html">A propos de nous</a></li>
+                    <li><a href="Contacts.html">Nous contacter</a></li>
+                </ul>
+                <center style="text-align: center; font-family: 'Roboto', sans-serif;; color:#FFF9FF; font-size: 13px; margin-left: 4.3%">SupA1+1&emsp;|&emsp;2019</center>
+            </div>
+        </footer>
+        
+    </body>
+        
+        
+</html>
