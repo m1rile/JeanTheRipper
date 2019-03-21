@@ -1,87 +1,67 @@
 <!DOCTYPE html>
 
 <html>
-    
-    <head>
-        <!-- Tag title is the name of the tab-->
-        <meta http-equiv="charset=UTF-8" />
+    <head lang="fr">
+        <meta charset="utf-8">
         <title>JeanTheRipper</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Laila|Roboto+Condensed|Lato|Oswald|Anton|Lobster" rel="stylesheet">
         
     </head>
     
-            <header>
-            <div style="background-color: rgba(222,60,14,0.85); height: 130px">
+    <body id="debut" style="background-color: #FFF9FF">
+
+        <header>
+            <div style="background-color: rgba(255,100,0,1); height: 130px">
             <br>
-            <h1 style="color: rgb(240, 240, 240);text-align: center;font-size: 38px;font-family:fantasy">JeanTheRipper</h1>
-        </div>
-        
+            <h1 style="color: rgb(240, 240, 240);text-align: center;font-size: 38px;font-family: 'Anton', sans-serif;">JeanTheRipper</h1>
+            </div>
         </header>
-    
-    <body id="debut">
-        <!-- 
-        Tag body is the content of the page
-        
-        Tag p allow paragraph
-        
-        Tag h + number make title with different size
-
-        Tag br = line break
-
-        Tag a = a line with a redirection to an url with the code href="..." 
-        If we want to redirect in another tab, just add the attribute target="_blank"
-        If we want to redirect to a section on the same page, just add the attribute target="#section ..."
-
-        Tag section = create a new section with a paragraph and its title
-        
-        Tag img = just add the attribute src ="path". If we want to add a comment on this photo add the attribute alt="comment"
-
-        Tag li = list
-        
-        Tag ol/ul = make an order in a list
-
-        Attribute css style = can modify color/size/font
-
-        Tag strong = make a word in bold
-
-        Tag div = make lots of parts on the page
-
-
-        -->
         
         <nav id="navbar">
             <ul>
-                <li class="menu-html"><a href="index.html" style="background-color: rgba(0,0,0,0.39)">Accueil</a></li>
+                <li class="menu-html"><a id="a1" href="Home.html" style="background-color: rgba(0,0,0,0.4)">Home</a></li>
                 <li class="menu-JTR"><a href="JonhTheRipper.html">John The Ripper</a></li>
-                <li class="menu-Hash"><a href="Hashcat.html">Hashacat</a></li>
-                <li class="menu-Pré"><a href="Pr%C3%A9sentations.html">Présentations</a></li>
-                <li1 class="menu-co"><a id="a1" href="Connexion.html">Connexion</a></li1>
+                <li class="menu-Hash"><a id="a1" href="Hashcat.html">Hashcat</a></li>
+                <li class="menu-Para"><a id="a1" href="Parallelism.html">Parallelism</a></li>
+                <li class="menu-Pré"><a href="Project.html">Download</a></li>
+                <li1><a id="a1" href="../index.html">FR</a></li1>
+                <li1 class="menu-co"><a id="a1" href="Signup.html">Sign up</a></li1>
             </ul>
         </nav>
         
         <br><br>
         
-        <h1 style="text-align: center; margin-left: -300px">Pour commencer :</h1>
+        <h1 style="text-align: center; margin-left: -300px; font-family: 'Lobster', cursive; text-decoration: underline">First of all:</h1>
     
         
         <div class="grey">
-        
-            <p> Dans le cadre d'un projet à réaliser pour notre quatrième semestre à l'EPITA, nous avons voulu nous lancer sur le concept de cassage du mot de passe. </p>
+            <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+            <p>As part of a project to be completed for our fourth semester at EPITA, we wanted to get started on the concept of breaking the password.</p>
+            <center>
+                <a href="http://www.epita.fr/" target="_blank"><img src="../Images/Epita_opt_opt.png" alt="logo d'EPITA"></a>
+            </center>
+            <br>
             
-            <a href="http://www.epita.fr/" target="_blank"><img src="Images/Epita_opt_opt.png" alt="logo d'EPITA"></a>
+            <p> For this reason we wanted to study more deeply the concept of Jonh The Ripper as well as that of Hashacat.</p>
             
             <br>
             
-            <p> Pour cette raison nous avons voulu étudier plus en profondeur le concept de Jonh The Ripper ainsi que celui du Hashacat.</p>
+            <p> We are four students in the second year of the preparatory cycle at EPITA and are more than motivated to work in groups and thus to enrich our knowledge.</p>
             
             <br>
             
-            <p> Nous sommes quatres étudiants en deuxième année du cycle préparatoire à l'EPITA et sommes plus que motivés pour pouvoir travailler en groupe et ainsi d'enrichir nos connaissances.</p>
-        
-            <div><a id="cRetour" class="cInvisible" href="#debut"></a></div>
+            <p> Below you can see the logo of our group, the "SupA1 + 1". The term "Sup" represents the first year of the preparatory cycle at Epita, and we decided to call it this way because the three members of the group were in the same class in the first year and was joined in the second year by a newcomer in our school (hence the "+1").</p>
+            
+            <br>
+            
+            <center>
+                <a><img src="../Images/SupA1+1.png" alt="logo de notre groupe"></a>
+            </center>
+            
+            <a id="cRetour" class="cInvisible" href="#debut"></a>
             
         </div>
-        
         
         <script>
                 document.addEventListener('DOMContentLoaded', function()
@@ -93,7 +73,17 @@
                 });
         </script>
         
-        <footer></footer>
+        <footer>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Links.html">Useful links</a></li>
+                    <li><a href="Presentations.html">About us</a></li>
+                    <li><a href="Contacts.html">Contact us</a></li>
+                </ul>
+                <center style="text-align: center; font-family: 'Roboto', sans-serif;; color:#FFF9FF; font-size: 13px; margin-left: 4.3%">SupA1+1&emsp;|&emsp;2019</center>
+            </div>
+        </footer>
         
     </body>
         
