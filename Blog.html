@@ -35,21 +35,83 @@
             <!-- picture must have a height of 200px -->
             
         <section>
-            <a class="post-image"><img src="Images/Updates/cdc.jpg"></a>
+            <a class="post-image" style="margin-left: 180px"><img src="Images/Updates/combinaisons.PNG"></a>
             <div class="post-text">
-                <h2 class="post-title">Rédaction du cahier des charges</h2>
-                <h3 class="post-date">Le 11 janvier 2019</h3>
-                <p class="post-copy"> Répartition des tâches de chacun, ainsi que détail de ce que l'on veut faire.
+                <h2 class="post-title">Attaque par combinaisons</h2>
+                <h3 class="post-date">Le 03 avril 2019 | éditée par @Low_battery</h3>
+                <p class="post-copy">L'attaque par combinaisons est basé sur le même principe que le dictionnaire. Sauf qu'à partir de l'agument on doit essyer d'extraire le plus de combinaisons possible.
                 <br>
-                Le cahier des charges est disponible en pdf téléchargeable sur ce site, via l'onglet "Téléchargement".
+                Sur l'exemple, vous pourrez observer un exemple simple et court. Cette méthode, de la manière dont nous l'avons implémeté, possède des limites. En effet, elle nécessite beaucoup de mémoire pour pouvoir se lancer correctement et ne supporte pas les fichiers trop longs.
                 <br>
-                Nous nous servons de Latex pour rédiger tous nos rapports de noutenances ainsi que le cahier des charges (voir l'onglet des liens uiles présent sur ce site).
+                Globlalement, le programme fonctionne relativement bien.
                 </p>
             </div>
         </section>
             
         <hr>
             
+        <section>
+            <a class="post-image" style="margin-left: 180px"><img src="Images/Updates/rapport%20de%20soutenance%201.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Rapport de soutenance 1</h2>
+                <h3 class="post-date">Le 27 février 2019 | éditée par @Low_battery</h3>
+                <p class="post-copy">Le rapport de soutenance 1 est maintenant disponible !
+                <br>
+                Vous trouverez le lien de téléchargement en cliquant sur le menu du haut, l'onglet "Téléchargement". Ensuite redirigez-vous à la rubrique "Les rapports de soutenance".
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+                
+        <section>
+            <a class="post-image" style="margin-left: 98px"><img src="Images/Updates/dict.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">L'attaque par dictionnaire</h2>
+                <h3 class="post-date">Le 16 février 2019 | éditée par @Barbe_verte</h3>
+                <p class="post-copy">Cette attaque consiste à récupérer chaque ligne du dictionnaire que l’on envoie à la fonction de hachage passée en paramètre. 
+                <br>
+                On compare ensuite la valeur de hachage à chaque ligne des valeurs à casser. Si les deux valeurs sont les mêmes, on affiche la valeur ainsi que le mot de passe trouvé dans le dictionnaire et l’on décrémente le nombre de mots de passe a trouver.
+                <br>
+                On s’arrête lorsque l’on a testé tous les mots du dictionnaire ou que l’on a cassé toutes les valeurs de hachage. 
+                </p>
+            </div>
+        </section>
+    
+        <hr>
+        
+        <section>
+            <a class="post-image" style="margin-left: 180px"><img src="Images/Updates/dict_para.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">"Divide and conquer"</h2>
+                <h3 class="post-date">Le 16 février 2019 | éditée par @Barbe_verte</h3>
+                <p class="post-copy">Pour les dictionnaires, nous utilisons le "divide and conquer", qui consiste simplement a donner une partie du travail a chaque thread, partie qui correspond justement au travail total divise par le nombre de threads.
+                <br>
+                Concrètement nous partageons la région "mappée" du dictionnaire en nombre de thread. Cette technique a le mérite d’être simple et efficace, et nous pourrons l’implémenter bien plus facilement sans openMP que pour le bruteforce.
+                <br>
+                Cette technique est efficace ici puisque la quantité de travail est la même pour chaque thread, sauf pour le dernier qui ajoute à sa partie le reste de la division. 
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+            
+        <section>
+            <a class="post-image" style="margin-left: 75px"><img src="Images/Updates/brute_para.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Brute Force Parall&eacute;lisme</h2>
+                <h3 class="post-date">Le 10 février 2019 | éditée par @Barbe_verte</h3>
+                <p class="post-copy">Pour le brute-force, la fonction étant pour l’instant récursive il etait difficile de la paralléliser efficacement, étant donne que chaque état dépend de l’appel récursif précèdent.
+                <br>
+                Il a donc suffit de donner chaque taille a un thread, thread qui fera par la suite tous les appels récursifs suivant le sien, pendant que les autres feront la même chose mais pour une autre taille.
+                <br>
+                Le problème ici est que chaque thread n’a pas la même quantité de travail. 
+                </p>
+            </div>
+        </section>  
+                
+        <hr>
+        
         <section>
             <a class="post-image"><img src="Images/Updates/cr%C3%A9ation%20site.jpg"></a>
             <div class="post-text">
@@ -64,7 +126,23 @@
                 </p>
             </div>
         </section>
-        
+            
+        <hr>
+    
+        <section>
+            <a class="post-image"><img src="Images/Updates/cdc.jpg"></a>
+            <div class="post-text">
+                <h2 class="post-title">Rédaction du cahier des charges</h2>
+                <h3 class="post-date">Le 11 janvier 2019</h3>
+                <p class="post-copy"> Répartition des tâches de chacun, ainsi que détail de ce que l'on veut faire.
+                <br>
+                Le cahier des charges est disponible en pdf téléchargeable sur ce site, via l'onglet "Téléchargement".
+                <br>
+                Nous nous servons de Latex pour rédiger tous nos rapports de noutenances ainsi que le cahier des charges (voir l'onglet des liens uiles présent sur ce site).
+                </p>
+            </div>
+        </section>
+            
         <hr>    
         
             <div><a id="cRetour" class="cInvisible" href="#debut"></a></div>
