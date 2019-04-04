@@ -34,20 +34,113 @@
         <div>
             <!-- picture must have a height of 200px -->
             
+        
         <section>
-            <a class="post-image"><img src="../Images/Updates/cdc.jpg"></a>
+            <a class="post-image" style="margin-left: 180px"><img src="../Images/Updates/Project%20report.png"></a>
             <div class="post-text">
-                <h2 class="post-title">Drafting specifications</h2>
-                <h3 class="post-date">January 11, 2019</h3>
-                <p class="post-copy"> Breakdown of the tasks of each, as well as detail of what one wants to do.
+                <h2 class="post-title">Project report 2</h2>
+                <h3 class="post-date">April 3, 2019 | written by @Low_battery</h3>
+                <p class="post-copy">The project report 2 is now available!
                 <br>
-                The specifications are available in pdf downloadable on this site, via the "Download" tab.
-                <br>
-                We use Latex to write all our reports of noutenances as well as the specifications (see the links tab uiles present on this site).
+                You will find the download link by clicking on the top menu, the "Download" tab. Then go to the section "Project reports".
                 </p>
             </div>
         </section>
             
+        <hr>
+        
+        <section>
+            <a class="post-image" style="margin-left: 180px"><img src="../Images/Updates/combinaisons.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Attack by combinations</h2>
+                <h3 class="post-date">April 3, 2019 | written by @Low_battery</h3>
+                <p class="post-copy">Combination attack is based on the same principle as the dictionary. Except that from the act one must try to extract as many combinations as possible.
+                <br>
+                On the example, you will see a simple and short example. This method, the way we have implemented it, has limitations. Indeed, it requires a lot of memory to be able to launch correctly and does not support the files too long.
+                <br>
+                Overall, the program works relatively well.
+                </p>
+            </div>
+        </section>
+        
+        <hr>
+    
+        <section>
+            <a class="post-image" style="margin-left: 45px"><img src="../Images/Updates/mask.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Mask attack</h2>
+                <h3 class="post-date">April 1, 2019 | written by Louis</h3>
+                <p class="post-copy">The method by mask, is a method which makes it possible to reduce considerably the possible combinations and therefore the time of breaking compared to the brute force, by adding conditions.
+                <br>
+                Nevertheless, it requires to know information in advance on the password as the size of the password, the position of capital letters and so on.
+                <br>
+                Having successfully coded a functional bruteforce for the first defense, coding the algorithm for mask password cracking was more spontaneous.
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+            
+        <section>
+            <a class="post-image" style="margin-left: 180px"><img src="../Images/Updates/rapport%20de%20soutenance%201.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Project report 1</h2>
+                <h3 class="post-date">February 27, 2019 | written by @Low_battery</h3>
+                <p class="post-copy">The defense report 1 is now available!
+                <br>
+                You will find the download link by clicking on the top menu, the "Download" tab. Then go to the section "The defense reports".
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+                
+        <section>
+            <a class="post-image" style="margin-left: 98px"><img src="../Images/Updates/dict.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Dictionary attack</h2>
+                <h3 class="post-date">February 16, 2019 | written by @Barbe_verte</h3>
+                <p class="post-copy">This attack consists of recovering each line of the dictionary that is sent to the hash function passed as a parameter.
+                <br>
+                The hash value is then compared to each line of values to be broken. If the two values are the same, we display the value and the password found in the dictionary and decrements the number of passwords to find.
+                <br>
+                One stops when one has tested all the words of the dictionary or that one has broken all the values of hash. 
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+        
+        <section>
+            <a class="post-image" style="margin-left: 180px"><img src="../Images/Updates/dict_para.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">"Divide and conquer"</h2>
+                <h3 class="post-date">February 16, 2019 | written by @Barbe_verte</h3>
+                <p class="post-copy">For dictionaries, we use the "divide and conquer", which is simply to give a part of the work to each thread, which corresponds to the total work divided by the number of threads.
+                <br>
+                Specifically we share the region "mapped" dictionary in number of threads. This technique has the merit of being simple and effective, and we can implement it much more easily without openMP than for bruteforce.
+                <br>
+                This technique is effective here since the amount of work is the same for each thread, except for the last one which adds to its part the rest of the division.
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+            
+        <section>
+            <a class="post-image" style="margin-left: 75px"><img src="../Images/Updates/brute_para.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Brute Force Parallelism</h2>
+                <h3 class="post-date">February 10, 2019 | written by @Barbe_verte</h3>
+                <p class="post-copy">For the brute-force, the function being recursively for the moment it was difficult to parallel it effectively, since each state depends on the preceding recursive call.
+                <br>
+                It is therefore sufficient to give each size to a thread, which will eventually make all recursive calls following his, while others will do the same thing but for another size.
+                <br>
+                The problem here is that each thread does not have the same amount of work.
+                </p>
+            </div>
+        </section>  
+                
         <hr>
             
         <section>
@@ -62,7 +155,23 @@
                 </p>
             </div>
         </section>
-        
+            
+        <hr>
+            
+        <section>
+            <a class="post-image"><img src="../Images/Updates/cdc.jpg"></a>
+            <div class="post-text">
+                <h2 class="post-title">Drafting specifications</h2>
+                <h3 class="post-date">January 11, 2019</h3>
+                <p class="post-copy"> Breakdown of the tasks of each, as well as detail of what one wants to do.
+                <br>
+                The specifications are available in pdf downloadable on this site, via the "Download" tab.
+                <br>
+                We use Latex to write all our reports of noutenances as well as the specifications (see the links tab uiles present on this site).
+                </p>
+            </div>
+        </section>
+            
         <hr>    
         
             <div><a id="cRetour" class="cInvisible" href="#debut"></a></div>

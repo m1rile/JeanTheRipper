@@ -35,6 +35,20 @@
             <!-- picture must have a height of 200px -->
             
         <section>
+            <a class="post-image" style="margin-left: 180px"><img src="Images/Updates/rapport%20de%20soutenance%202.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">Rapport de soutenance 2</h2>
+                <h3 class="post-date">Le 03 avril 2019 | éditée par @Low_battery</h3>
+                <p class="post-copy">Le rapport de soutenance 2 est maintenant disponible !
+                <br>
+                Vous trouverez le lien de téléchargement en cliquant sur le menu du haut, l'onglet "Téléchargement". Ensuite redirigez-vous à la rubrique "Les rapports de soutenance".
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+            
+        <section>
             <a class="post-image" style="margin-left: 180px"><img src="Images/Updates/combinaisons.png"></a>
             <div class="post-text">
                 <h2 class="post-title">Attaque par combinaisons</h2>
@@ -44,6 +58,22 @@
                 Sur l'exemple, vous pourrez observer un exemple simple et court. Cette méthode, de la manière dont nous l'avons implémeté, possède des limites. En effet, elle nécessite beaucoup de mémoire pour pouvoir se lancer correctement et ne supporte pas les fichiers trop longs.
                 <br>
                 Globlalement, le programme fonctionne relativement bien.
+                </p>
+            </div>
+        </section>
+            
+        <hr>
+            
+        <section>
+            <a class="post-image" style="margin-left: 45px"><img src="Images/Updates/mask.png"></a>
+            <div class="post-text">
+                <h2 class="post-title">L'attaque par masque</h2>
+                <h3 class="post-date">Le 01 avril 2019 | éditée par Louis</h3>
+                <p class="post-copy">La méthode par masque, est une méthode qui permet de réduire considérablement les combinaisons possibles et donc le temps de cassage par rapport au brute force, en ajoutant des conditions.
+                <br>
+                Néanmoins, elle nécessite de connaître des informations au préalable sur le mot de passe comme la taille du mot de passe, la position des majuscules etc.
+                <br>
+                Ayant réussi à coder un bruteforce fonctionnel pour la première soutenance, coder l’algorithme pour le cassage de mot de passe par masque était plus spontané.
                 </p>
             </div>
         </section>
@@ -101,7 +131,7 @@
             <div class="post-text">
                 <h2 class="post-title">Brute Force Parall&eacute;lisme</h2>
                 <h3 class="post-date">Le 10 février 2019 | éditée par @Barbe_verte</h3>
-                <p class="post-copy">Pour le brute-force, la fonction étant pour l’instant récursive il etait difficile de la paralléliser efficacement, étant donne que chaque état dépend de l’appel récursif précèdent.
+                <p class="post-copy">Pour le brute-force, la fonction étant pour l’instant récursive il etait difficile de la paralléliser efficacement, étant donné que chaque état dépend de l’appel récursif précédent.
                 <br>
                 Il a donc suffit de donner chaque taille a un thread, thread qui fera par la suite tous les appels récursifs suivant le sien, pendant que les autres feront la même chose mais pour une autre taille.
                 <br>
